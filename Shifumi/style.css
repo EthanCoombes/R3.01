@@ -3,21 +3,15 @@ h1{
     text-align: center;
 }
 
-.jeu{
+.game{
     color: blue;
     background: white;
     border-color: black;
 }
 
-#resultat{
+#result, #score{
     text-align: center;
     font-size: 20px;
-    margin-top: 20px;
-}
-
-#score{
-    text-align: center;
-    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -26,12 +20,28 @@ body{
     background-color: #f0f0f0;
 }
 
+main{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 button{
+    height: 50px;
+    width: 200px;
     cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    margin: 20px 20px;
+    padding: 10px 50px;
     font-size: 16px;
+}
+
+#reset{
+    display: block;
+    margin: auto;
+    width: 250px;
+    color: white;
+    background-color: blue;
 }
 
 button:hover{
